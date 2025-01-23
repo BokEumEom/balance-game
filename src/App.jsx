@@ -3,11 +3,21 @@ import Home from "./pages/Home";
 import Summary from "./pages/Summary";
 
 const App = () => {
+  const handleRestart = () => {
+    // 세션 스토리지 초기화 (필요한 경우)
+    sessionStorage.clear();
+    // 홈으로 이동
+    window.location.href = "/";
+  };
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/summary" element={<Summary />} />
+        <Route
+          path="/summary"
+          element={<Summary onRestart={handleRestart} />}
+        />
       </Routes>
     </Router>
   );

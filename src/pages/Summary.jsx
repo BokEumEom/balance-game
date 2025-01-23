@@ -1,19 +1,49 @@
+import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import ResultBar from "../components/ResultBar";
 import { shareResults } from "../utils/share";
 
-/**
- * Summary 컴포넌트
- * @param {Array} questions - 모든 질문 배열
- * @param {Object} results - 모든 질문의 결과 데이터 (questionId: { A: number, B: number })
- * @param {Function} onRestart - 다시 시작하기 버튼 클릭 시 호출되는 함수
- */
-function Summary({ questions, results, onRestart }) {
-  // 결과 공유 함수
-  const handleShare = () => {
-    shareResults(results);
+function Summary({ onRestart }) {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [results, setResults] = useState({});
+  const [questions, setQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const key = searchParams.get("key");
+
+    if (key) {
+      const savedData = sessionStorage.getItem(key);
+      if (savedData) {
+        const { results, questions } = JSON.parse(savedData);
+        setResults(results);
+        setQuestions(questions);
+      } else {
+        alert("유효하지 않은 데이터 키입니다.");
+        navigate("/");
+      }
+    } else {
+      alert("유효하지 않은 링크입니다.");
+      navigate("/");
+    }
+    setLoading(false);
+  }, [location, navigate]);
+
+  const handleShare = async () => {
+    try {
+      const searchParams = new URLSearchParams(location.search);
+      const key = searchParams.get("key");
+      if (!key) throw new Error("유효하지 않은 공유 키입니다.");
+
+      await shareResults(key);
+    } catch (err) {
+      console.error("결과 공유 중 오류 발생:", err);
+      alert("결과를 공유하는 중 문제가 발생했습니다. 다시 시도해주세요.");
+    }
   };
 
-  // 성향 분석 함수 (예시)
   const analyzeTendency = () => {
     const totalQuestions = questions.length;
     let matchCount = 0;
@@ -31,16 +61,18 @@ function Summary({ questions, results, onRestart }) {
     return `당신은 대중적 선택과 ${matchPercentage}% 일치합니다!`;
   };
 
+  if (loading) {
+    return <div>로딩 중...</div>;
+  }
+
   return (
     <div className="summary-container">
       <h2 className="summary-title">전체 결과 요약</h2>
 
-      {/* 성향 분석 결과 표시 */}
       <div className="tendency-analysis">
         <p>{analyzeTendency()}</p>
       </div>
 
-      {/* 각 질문의 결과 표시 */}
       {questions.map((q) => {
         const stats = results[q.id] || { A: 0, B: 0 };
         const total = stats.A + stats.B;
@@ -72,10 +104,12 @@ function Summary({ questions, results, onRestart }) {
         );
       })}
 
-      {/* 버튼 그룹 (결과 공유 및 다시 시작) */}
       <div className="button-group">
         <button className="share-btn" onClick={handleShare}>
           결과 공유하기
+        </button>
+        <button className="restart-btn" onClick={onRestart}>
+          다시 하기
         </button>
       </div>
     </div>
