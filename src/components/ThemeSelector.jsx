@@ -1,4 +1,4 @@
-import themes from "../data/themes.json"; // 테마 데이터 불러오기
+import themes from "../data/themes"; // themes.js 기본 내보내기 불러오기
 
 function ThemeSelector({ onSelectTheme, selectedThemeId }) {
   return (
