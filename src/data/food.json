@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "title": "평생 라면만 먹기 vs 평생 치킨만 먹기",
+      "optionA": "라면",
+      "optionB": "치킨",
+      "imageA": "https://example.com/images/ramen.jpg",
+      "imageB": "https://example.com/images/chicken.jpg",
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "title": "10년 동안 같은 메뉴로 아침 먹기 vs 10년 동안 같은 메뉴로 저녁 먹기",
+      "optionA": "아침 같은 메뉴",
+      "optionB": "저녁 같은 메뉴",
+      "imageA": "https://example.com/images/breakfast.jpg",
+      "imageB": "https://example.com/images/dinner.jpg",
+      "difficulty": "medium"
+    },
+    {
+      "id": 3,
+      "title": "평생 단맛만 느끼기 vs 평생 짠맛만 느끼기",
+      "optionA": "단맛",
+      "optionB": "짠맛",
+      "imageA": "https://example.com/images/sweet.jpg",
+      "imageB": "https://example.com/images/salty.jpg",
+      "difficulty": "hard"
+    },
+    {
+      "id": 4,
+      "title": "매일 초밥 먹기 vs 매일 피자 먹기",
+      "optionA": "초밥",
+      "optionB": "피자",
+      "imageA": "https://example.com/images/sushi.jpg",
+      "imageB": "https://example.com/images/pizza.jpg",
+      "difficulty": "easy"
+    },
+    {
+      "id": 5,
+      "title": "평생 아이스크림만 먹기 vs 평생 초콜릿만 먹기",
+      "optionA": "아이스크림",
+      "optionB": "초콜릿",
+      "imageA": "https://example.com/images/icecream.jpg",
+      "imageB": "https://example.com/images/chocolate.jpg",
+      "difficulty": "medium"
+    },
+    {
+      "id": 6,
+      "title": "평생 김치만 먹기 vs 평생 된장만 먹기",
+      "optionA": "김치",
+      "optionB": "된장",
+      "imageA": "https://example.com/images/kimchi.jpg",
+      "imageB": "https://example.com/images/doenjang.jpg",
+      "difficulty": "easy"
+    },
+    {
+      "id": 7,
+      "title": "평생 매운 음식만 먹기 vs 평생 달콤한 음식만 먹기",
+      "optionA": "매운 음식",
+      "optionB": "달콤한 음식",
+      "imageA": "https://example.com/images/spicy.jpg",
+      "imageB": "https://example.com/images/sweetfood.jpg",
+      "difficulty": "medium"
+    },
+    {
+      "id": 8,
+      "title": "평생 과일만 먹기 vs 평생 채소만 먹기",
+      "optionA": "과일",
+      "optionB": "채소",
+      "imageA": "https://example.com/images/fruit.jpg",
+      "imageB": "https://example.com/images/vegetable.jpg",
+      "difficulty": "hard"
+    },
+    {
+      "id": 9,
+      "title": "평생 빵만 먹기 vs 평생 밥만 먹기",
+      "optionA": "빵",
+      "optionB": "밥",
+      "imageA": "https://example.com/images/bread.jpg",
+      "imageB": "https://example.com/images/rice.jpg",
+      "difficulty": "easy"
+    },
+    {
+      "id": 10,
+      "title": "평생 커피만 마시기 vs 평생 차만 마시기",
+      "optionA": "커피",
+      "optionB": "차",
+      "imageA": "https://example.com/images/coffee.jpg",
+      "imageB": "https://example.com/images/tea.jpg",
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+/* 요약 컨테이너 스타일 */
+.summary-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 요약 제목 스타일 */
+.summary-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 성향 분석 결과 스타일 */
+.tendency-analysis {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* 질문 카드 스타일 */
+.question-card {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 질문 제목 스타일 */
+.question-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* 투표 없음 메시지 스타일 */
+.no-votes {
+  text-align: center;
+  color: #777;
+}
+
+/* 유사 질문 추천 스타일 */
+.similar-questions {
+  margin-top: 30px;
+}
+
+.similar-questions h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* 버튼 그룹 스타일 */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.share-btn,
+.restart-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.share-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.share-btn:hover {
+  background-color: #2980b9;
+}
+
+.restart-btn {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.restart-btn:hover {
+  background-color: #27ae60;
+}

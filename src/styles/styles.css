@@ -26,166 +26,6 @@ body {
   padding: 0 1rem;
 }
 
-/* ProgressBar: 더 큰 텍스트와 두꺼운 바 */
-.progress-container {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.progress-text {
-  font-size: clamp(0.9rem, 2vw, 1rem); /* 반응형 폰트 크기 */
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-.progress-bar {
-  width: 100%;
-  height: 10px; /* 높이 증가 */
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 4px;
-  overflow: hidden;
-}
-.progress-fill {
-  height: 100%;
-  background-color: #4aa9ff;
-  transition: width 0.4s ease;
-}
-
-/* 카드 */
-.question-card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 1rem;
-}
-
-/* 슬라이드 애니메이션 */
-.slide-in-right {
-  animation: slideInRight 0.3s ease-in-out;
-}
-.slide-out-left {
-  animation: slideOutLeft 0.3s ease-in-out;
-}
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes slideOutLeft {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-}
-
-.question-title {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* 선택(버튼) 섹션 */
-.choices {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.choice-btn {
-  padding: 1rem;
-  font-size: clamp(1rem, 3vw, 1.2rem);
-  background-color: #4aa9ff;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-.choice-btn:hover {
-  background-color: #3593e8;
-  transform: scale(1.05);
-}
-
-.vs {
-  font-size: 1rem;
-  color: #999;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-/* 결과 영역 */
-.results {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.result-option {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.option-label {
-  width: 80px;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
-  font-weight: 600;
-}
-.bar-container {
-  flex: 1;
-  background-color: #eee;
-  border-radius: 4px;
-  height: 20px;
-  overflow: hidden;
-}
-.bar-fill {
-  height: 100%;
-  transition: width 0.3s;
-}
-.percentage {
-  font-size: clamp(0.8rem, 2.2vw, 0.9rem);
-  width: 60px;
-  text-align: right;
-}
-
-/* 다음 버튼 */
-.next-btn {
-  align-self: center;
-  background-color: #ff7f7f;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 0.8rem 1.5rem;
-  font-size: clamp(1rem, 3vw, 1.2rem);
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  margin-top: 1rem;
-}
-.next-btn:hover {
-  background-color: #ff6262;
-  transform: scale(1.05);
-}
-
-/* 요약 페이지 */
-.summary-title {
-  text-align: center;
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
 /* 반응형 디자인 */
 @media (max-width: 480px) {
   .home-container {
@@ -197,5 +37,26 @@ body {
   }
   .choice-btn {
     padding: 0.8rem;
+  }
+}
+
+/* 복사 성공 메시지 스타일 */
+.copy-success {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #4caf50;
+  font-weight: bold;
+  animation: fadeIn 0.4s ease;
+}
+
+/* 페이드 인 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

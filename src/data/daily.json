@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "id": 21,
+      "title": "평생 아침 5시에 일어나기 vs 평생 밤 12시에 자야 하기",
+      "optionA": "아침 5시 기상",
+      "optionB": "밤 12시 취침",
+      "imageA": "https://example.com/images/earlybird.jpg",
+      "imageB": "https://example.com/images/nightowl.jpg",
+      "difficulty": "medium"
+    },
+    {
+      "id": 22,
+      "title": "평생 청소만 하기 vs 평생 요리만 하기",
+      "optionA": "청소만 하기",
+      "optionB": "요리만 하기",
+      "imageA": "https://example.com/images/cleaning.jpg",
+      "imageB": "https://example.com/images/cooking.jpg",
+      "difficulty": "easy"
+    },
+    {
+      "id": 23,
+      "title": "평생 책만 읽기 vs 평생 영화만 보기",
+      "optionA": "책만 읽기",
+      "optionB": "영화만 보기",
+      "imageA": "https://example.com/images/books.jpg",
+      "imageB": "https://example.com/images/movies.jpg",
+      "difficulty": "medium"
+    },
+    {
+      "id": 24,
+      "title": "평생 운동만 하기 vs 평생 휴식만 하기",
+      "optionA": "운동만 하기",
+      "optionB": "휴식만 하기",
+      "imageA": "https://example.com/images/exercise.jpg",
+      "imageB": "https://example.com/images/rest.jpg",
+      "difficulty": "hard"
+    },
+    {
+      "id": 25,
+      "title": "평생 집에서만 지내기 vs 평생 여행만 다니기",
+      "optionA": "집에서만 지내기",
+      "optionB": "여행만 다니기",
+      "imageA": "https://example.com/images/home.jpg",
+      "imageB": "https://example.com/images/travel.jpg",
+      "difficulty": "medium"
+    },
+    {
+      "id": 26,
+      "title": "평생 스마트폰 없이 살기 vs 평생 컴퓨터 없이 살기",
+      "optionA": "스마트폰 없이 살기",
+      "optionB": "컴퓨터 없이 살기",
+      "imageA": "https://example.com/images/nophone.jpg",
+      "imageB": "https://example.com/images/nocomputer.jpg",
+      "difficulty": "hard"
+    },
+    {
+      "id": 27,
+      "title": "평생 친구들과만 시간 보내기 vs 평생 가족과만 시간 보내기",
+      "optionA": "친구들과만 시간 보내기",
+      "optionB": "가족과만 시간 보내기",
+      "imageA": "https://example.com/images/friends.jpg",
+      "imageB": "https://example.com/images/family.jpg",
+      "difficulty": "easy"
+    },
+    {
+      "id": 28,
+      "title": "평생 계획적으로 살기 vs 평생 즉흥적으로 살기",
+      "optionA": "계획적으로 살기",
+      "optionB": "즉흥적으로 살기",
+      "imageA": "https://example.com/images/planned.jpg",
+      "imageB": "https://example.com/images/spontaneous.jpg",
+      "difficulty": "medium"
+    },
+    {
+      "id": 29,
+      "title": "평생 도시에서 살기 vs 평생 시골에서 살기",
+      "optionA": "도시에서 살기",
+      "optionB": "시골에서 살기",
+      "imageA": "https://example.com/images/city.jpg",
+      "imageB": "https://example.com/images/countryside.jpg",
+      "difficulty": "easy"
+    },
+    {
+      "id": 30,
+      "title": "평생 일만 하기 vs 평생 놀기만 하기",
+      "optionA": "일만 하기",
+      "optionB": "놀기만 하기",
+      "imageA": "https://example.com/images/work.jpg",
+      "imageB": "https://example.com/images/play.jpg",
+      "difficulty": "hard"
+    }
+  ]
+}

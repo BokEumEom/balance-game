@@ -1,0 +1,32 @@
+/* 결과 영역 */
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.result-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.option-label {
+  width: 80px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  font-weight: 600;
+}
+.bar-container {
+  flex: 1;
+  background-color: #eee;
+  border-radius: 4px;
+  height: 20px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  transition: width 0.3s;
+}
+.percentage {
+  font-size: clamp(0.8rem, 2.2vw, 0.9rem);
+  width: 60px;
+  text-align: right;
+}

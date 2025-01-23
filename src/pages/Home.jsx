@@ -1,23 +1,47 @@
-// src/pages/Home.jsx
-import React, { useEffect, useState } from "react";
-import questionsData from "../data/questions.json";
+import { useState } from "react";
 import ProgressBar from "../components/ProgressBar";
 import QuestionView from "../components/QuestionView";
 import Summary from "./Summary";
+import ThemeSelector from "../components/ThemeSelector"; // 테마 선택 컴포넌트 추가
 
 function Home() {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [results, setResults] = useState({});
   const [showSummary, setShowSummary] = useState(false);
-
-  // 애니메이션 관련 상태
-  // currentCardClass: "slide-in-right", "slide-out-left", 등
+  const [showThemeSelector, setShowThemeSelector] = useState(true); // 테마 선택 화면 표시 상태
   const [currentCardClass, setCurrentCardClass] = useState("slide-in-right");
 
-  useEffect(() => {
-    setQuestions(questionsData);
-  }, []);
+  // 테마 선택 시 호출되는 함수
+  const handleSelectTheme = async (themeId) => {
+    try {
+      // 테마별 데이터 동적 불러오기
+      const themeData = await import(`../data/${getThemeFileName(themeId)}`);
+      setQuestions(themeData.questions); // 선택된 테마의 질문 데이터 설정
+      setShowThemeSelector(false); // 테마 선택 화면 숨기기
+      setCurrentIndex(0); // 첫 질문으로 초기화
+    } catch (error) {
+      console.error("테마 데이터를 불러오는 중 오류 발생:", error);
+    }
+  };
+
+  // 테마 ID를 기반으로 파일 이름 반환
+  const getThemeFileName = (themeId) => {
+    switch (themeId) {
+      case 1:
+        return "food.json";
+      case 2:
+        return "game.json";
+      case 3:
+        return "daily.json";
+      case 4:
+        return "psychology.json";
+      case 5:
+        return "imagination.json";
+      default:
+        return "food.json"; // 기본값
+    }
+  };
 
   const handleSelect = (questionId, choice) => {
     setResults((prev) => {
@@ -35,25 +59,29 @@ function Home() {
     });
   };
 
-  // '다음 질문' 눌렀을 때 슬라이드 아웃 → 인덱스 변경 → 슬라이드 인
   const handleNext = () => {
-    // 마지막 질문이면 요약
     if (currentIndex >= questions.length - 1) {
       setShowSummary(true);
       return;
     }
-    // 1) 슬라이드 아웃 클래스로 변경
     setCurrentCardClass("slide-out-left");
-    // 2) 약간의 시간 후 인덱스 변경 + 다시 슬라이드 인
     setTimeout(() => {
       setCurrentIndex((prev) => prev + 1);
       setCurrentCardClass("slide-in-right");
-    }, 300); // CSS 애니메이션 시간과 맞춤
+    }, 300);
   };
 
+  // 테마 선택 화면 표시
+  if (showThemeSelector) {
+    return <ThemeSelector onSelectTheme={handleSelectTheme} />;
+  }
+
+  // 요약 화면 표시
   if (showSummary) {
     return <Summary questions={questions} results={results} />;
   }
+
+  // 질문 데이터 로딩 중
   if (questions.length === 0) return <div>Loading...</div>;
 
   const currentQuestion = questions[currentIndex];
@@ -70,7 +98,7 @@ function Home() {
         onSelect={handleSelect}
         onNext={handleNext}
         isLast={isLast}
-        animationClass={currentCardClass} // 새로운 prop
+        animationClass={currentCardClass}
       />
     </div>
   );
