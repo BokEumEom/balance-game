@@ -1,9 +1,8 @@
-import React from "react";
 import ResultBar from "./ResultBar";
 
 /**
  * QuestionView 컴포넌트
- * @param {Object} question - 현재 질문 객체 (id, title, optionA, optionB)
+ * @param {Object} question - 현재 질문 객체 (id, title, optionA, optionB, imageA, imageB)
  * @param {Object} stats - 현재 질문의 통계 데이터 (A, B 선택지의 투표 수)
  * @param {Function} onSelect - 선택지 클릭 시 호출되는 함수 (questionId, choice)
  * @param {Function} onNext - 다음 질문으로 이동하는 함수
@@ -40,7 +39,12 @@ function QuestionView({
             onClick={() => handleChoiceClick("A")}
             aria-label={`선택지 A: ${question.optionA}`}
           >
-            {question.optionA}
+            <img
+              src={question.imageA}
+              alt={question.optionA}
+              className="choice-image"
+            />
+            <span>{question.optionA}</span>
           </button>
           <span className="vs">VS</span>
           <button
@@ -48,7 +52,12 @@ function QuestionView({
             onClick={() => handleChoiceClick("B")}
             aria-label={`선택지 B: ${question.optionB}`}
           >
-            {question.optionB}
+            <img
+              src={question.imageB}
+              alt={question.optionB}
+              className="choice-image"
+            />
+            <span>{question.optionB}</span>
           </button>
         </div>
       ) : (

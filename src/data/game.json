@@ -5,8 +5,8 @@
       "title": "10억 받고 평생 게임 못 하기 vs 0원 받고 평생 게임하기",
       "optionA": "10억 받고 게임 포기",
       "optionB": "0원 받고 계속 게임",
-      "imageA": "https://example.com/images/money.jpg",
-      "imageB": "https://example.com/images/gaming.jpg",
+      "imageA": "/assets/images/money.webp",
+      "imageB": "/assets/images/gaming.webp",
       "difficulty": "hard"
     },
     {
@@ -14,8 +14,8 @@
       "title": "평생 한 게임만 하기 vs 매일 다른 게임 하기",
       "optionA": "한 게임만 하기",
       "optionB": "매일 다른 게임 하기",
-      "imageA": "https://example.com/images/onegame.jpg",
-      "imageB": "https://example.com/images/manygames.jpg",
+      "imageA": "/assets/images/onegame.webp",
+      "imageB": "/assets/images/manygames.webp",
       "difficulty": "medium"
     },
     {
@@ -23,8 +23,8 @@
       "title": "게임에서 항상 승리하기 vs 게임에서 항상 재미있기",
       "optionA": "항상 승리하기",
       "optionB": "항상 재미있기",
-      "imageA": "https://example.com/images/win.jpg",
-      "imageB": "https://example.com/images/fun.jpg",
+      "imageA": "/assets/images/win.webp",
+      "imageB": "/assets/images/fun.webp",
       "difficulty": "easy"
     },
     {
@@ -32,8 +32,8 @@
       "title": "평생 콘솔 게임만 하기 vs 평생 모바일 게임만 하기",
       "optionA": "콘솔 게임만 하기",
       "optionB": "모바일 게임만 하기",
-      "imageA": "https://example.com/images/console.jpg",
-      "imageB": "https://example.com/images/mobile.jpg",
+      "imageA": "/assets/images/console.webp",
+      "imageB": "/assets/images/mobile.webp",
       "difficulty": "medium"
     },
     {
@@ -41,8 +41,8 @@
       "title": "게임에서 최고의 아이템 얻기 vs 게임에서 최고의 친구 만들기",
       "optionA": "최고의 아이템",
       "optionB": "최고의 친구",
-      "imageA": "https://example.com/images/item.jpg",
-      "imageB": "https://example.com/images/friend.jpg",
+      "imageA": "/assets/images/item.webp",
+      "imageB": "/assets/images/friend.webp",
       "difficulty": "hard"
     },
     {
@@ -50,8 +50,8 @@
       "title": "평생 PvP 게임만 하기 vs 평생 PvE 게임만 하기",
       "optionA": "PvP 게임만 하기",
       "optionB": "PvE 게임만 하기",
-      "imageA": "https://example.com/images/pvp.jpg",
-      "imageB": "https://example.com/images/pve.jpg",
+      "imageA": "/assets/images/pvp.webp",
+      "imageB": "/assets/images/pve.webp",
       "difficulty": "medium"
     },
     {
@@ -59,8 +59,8 @@
       "title": "게임에서 최고의 실력 갖기 vs 게임에서 최고의 아이템 갖기",
       "optionA": "최고의 실력",
       "optionB": "최고의 아이템",
-      "imageA": "https://example.com/images/skill.jpg",
-      "imageB": "https://example.com/images/bestitem.jpg",
+      "imageA": "/assets/images/skill.webp",
+      "imageB": "/assets/images/bestitem.webp",
       "difficulty": "hard"
     },
     {
@@ -68,8 +68,8 @@
       "title": "평생 오프라인 게임만 하기 vs 평생 온라인 게임만 하기",
       "optionA": "오프라인 게임만 하기",
       "optionB": "온라인 게임만 하기",
-      "imageA": "https://example.com/images/offline.jpg",
-      "imageB": "https://example.com/images/online.jpg",
+      "imageA": "/assets/images/offline.webp",
+      "imageB": "/assets/images/online.webp",
       "difficulty": "easy"
     },
     {
@@ -77,8 +77,8 @@
       "title": "게임에서 최고의 그래픽 즐기기 vs 게임에서 최고의 스토리 즐기기",
       "optionA": "최고의 그래픽",
       "optionB": "최고의 스토리",
-      "imageA": "https://example.com/images/graphics.jpg",
-      "imageB": "https://example.com/images/story.jpg",
+      "imageA": "/assets/images/graphics.webp",
+      "imageB": "/assets/images/story.webp",
       "difficulty": "medium"
     },
     {
@@ -86,8 +86,8 @@
       "title": "평생 게임 개발하기 vs 평생 게임 플레이하기",
       "optionA": "게임 개발하기",
       "optionB": "게임 플레이하기",
-      "imageA": "https://example.com/images/develop.jpg",
-      "imageB": "https://example.com/images/play.jpg",
+      "imageA": "/assets/images/develop.webp",
+      "imageB": "/assets/images/play.webp",
       "difficulty": "hard"
     }
   ]

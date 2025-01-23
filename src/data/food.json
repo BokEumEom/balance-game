@@ -5,8 +5,8 @@
       "title": "평생 라면만 먹기 vs 평생 치킨만 먹기",
       "optionA": "라면",
       "optionB": "치킨",
-      "imageA": "https://example.com/images/ramen.jpg",
-      "imageB": "https://example.com/images/chicken.jpg",
+      "imageA": "/assets/images/ramen.webp",
+      "imageB": "/assets/images/chicken.webp",
       "difficulty": "easy"
     },
     {
@@ -14,8 +14,8 @@
       "title": "10년 동안 같은 메뉴로 아침 먹기 vs 10년 동안 같은 메뉴로 저녁 먹기",
       "optionA": "아침 같은 메뉴",
       "optionB": "저녁 같은 메뉴",
-      "imageA": "https://example.com/images/breakfast.jpg",
-      "imageB": "https://example.com/images/dinner.jpg",
+      "imageA": "/assets/images/breakfast.webp",
+      "imageB": "/assets/images/dinner.webp",
       "difficulty": "medium"
     },
     {
@@ -23,8 +23,8 @@
       "title": "평생 단맛만 느끼기 vs 평생 짠맛만 느끼기",
       "optionA": "단맛",
       "optionB": "짠맛",
-      "imageA": "https://example.com/images/sweet.jpg",
-      "imageB": "https://example.com/images/salty.jpg",
+      "imageA": "/assets/images/sweet.webp",
+      "imageB": "/assets/images/salty.webp",
       "difficulty": "hard"
     },
     {
@@ -32,8 +32,8 @@
       "title": "매일 초밥 먹기 vs 매일 피자 먹기",
       "optionA": "초밥",
       "optionB": "피자",
-      "imageA": "https://example.com/images/sushi.jpg",
-      "imageB": "https://example.com/images/pizza.jpg",
+      "imageA": "/assets/images/sushi.webp",
+      "imageB": "/assets/images/pizza.webp",
       "difficulty": "easy"
     },
     {
@@ -41,8 +41,8 @@
       "title": "평생 아이스크림만 먹기 vs 평생 초콜릿만 먹기",
       "optionA": "아이스크림",
       "optionB": "초콜릿",
-      "imageA": "https://example.com/images/icecream.jpg",
-      "imageB": "https://example.com/images/chocolate.jpg",
+      "imageA": "/assets/images/icecream.webp",
+      "imageB": "/assets/images/chocolate.webp",
       "difficulty": "medium"
     },
     {
@@ -50,8 +50,8 @@
       "title": "평생 김치만 먹기 vs 평생 된장만 먹기",
       "optionA": "김치",
       "optionB": "된장",
-      "imageA": "https://example.com/images/kimchi.jpg",
-      "imageB": "https://example.com/images/doenjang.jpg",
+      "imageA": "/assets/images/kimchi.webp",
+      "imageB": "/assets/images/doenjang.webp",
       "difficulty": "easy"
     },
     {
@@ -59,8 +59,8 @@
       "title": "평생 매운 음식만 먹기 vs 평생 달콤한 음식만 먹기",
       "optionA": "매운 음식",
       "optionB": "달콤한 음식",
-      "imageA": "https://example.com/images/spicy.jpg",
-      "imageB": "https://example.com/images/sweetfood.jpg",
+      "imageA": "/assets/images/spicy.webp",
+      "imageB": "/assets/images/sweetfood.webp",
       "difficulty": "medium"
     },
     {
@@ -68,8 +68,8 @@
       "title": "평생 과일만 먹기 vs 평생 채소만 먹기",
       "optionA": "과일",
       "optionB": "채소",
-      "imageA": "https://example.com/images/fruit.jpg",
-      "imageB": "https://example.com/images/vegetable.jpg",
+      "imageA": "/assets/images/fruit.webp",
+      "imageB": "/assets/images/vegetable.webp",
       "difficulty": "hard"
     },
     {
@@ -77,8 +77,8 @@
       "title": "평생 빵만 먹기 vs 평생 밥만 먹기",
       "optionA": "빵",
       "optionB": "밥",
-      "imageA": "https://example.com/images/bread.jpg",
-      "imageB": "https://example.com/images/rice.jpg",
+      "imageA": "/assets/images/bread.webp",
+      "imageB": "/assets/images/rice.webp",
       "difficulty": "easy"
     },
     {
@@ -86,8 +86,8 @@
       "title": "평생 커피만 마시기 vs 평생 차만 마시기",
       "optionA": "커피",
       "optionB": "차",
-      "imageA": "https://example.com/images/coffee.jpg",
-      "imageB": "https://example.com/images/tea.jpg",
+      "imageA": "/assets/images/coffee.webp",
+      "imageB": "/assets/images/tea.webp",
       "difficulty": "medium"
     }
   ]
