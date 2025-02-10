@@ -1,4 +1,5 @@
 import themes from "../data/themes"; // themes.js 기본 내보내기 불러오기
+import "../styles/ThemeSelector.css"
 
 function ThemeSelector({ onSelectTheme, selectedThemeId }) {
   return (

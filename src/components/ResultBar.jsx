@@ -1,4 +1,3 @@
-import React from "react";
 
 function ResultBar({ label, votes, total, color }) {
   const percent = total ? Math.round((votes / total) * 100) : 0;

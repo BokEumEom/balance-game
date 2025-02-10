@@ -1,0 +1,78 @@
+/* 전체 헤더 영역 */
+.balance-header {
+  background-color: #FF7F50; /* 생동감 있는 코랄 색상 */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* 헤더 내부 컨테이너: 좌우 정렬 */
+.balance-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 로고 및 타이틀 영역 */
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0;
+}
+
+/* 내비게이션 메뉴 스타일 */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+  color: #FFD700; /* 마우스 오버 시 황금색 */
+}
+
+/* 모바일 최적화: 768px 이하 */
+@media (max-width: 768px) {
+  .balance-header {
+    padding: 8px 16px;
+  }
+  
+  /* 모바일에서는 로고 영역 숨기기 */
+  .logo {
+    display: none;
+  }
+  
+  /* 내비게이션 메뉴 중앙 정렬 및 간격/글자 크기 조정 */
+  .nav ul {
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .nav li a {
+    font-size: 1rem;
+  }
+}
